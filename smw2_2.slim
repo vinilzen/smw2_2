@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    meta charset="utf-8" 
+    meta content="IE=edge" http-equiv="X-UA-Compatible" 
+    title Горизонтальный с двумя товарами
+    link href="css/main.css" rel="stylesheet" type="text/css" 
+  body
+    test-container style=("padding:5px;") 
+      .sm_w2_2.sm_w2_2vert
+        .sm_w2_2container
+          .sm_w2_2row.sm_w2_2row-head
+            .sm_w2_2col-4
+              a.sm_w2_2ya-logo href="ya.sm_w2_2ru" alt="Яндекс Маркет"
+                img.sm_w2_2img-responsive src="img/yam.png"
+            .sm_w2_2col-8.sm_w2_2item-title
+              h1
+                | Предложения дня в городе
+                a.sm_w2_2change-city href="http://" target="_blank" Москва
+
+          .sm_w2_2row.sm_w2_2row-body
+            .sm_w2_2col-4
+              a href="#"
+                img.sm_w2_2img-responsive.sm_w2_2item-photo.sm_w2_2item-three-photo alt="" src="img/htc.png"
+            .sm_w2_2col-8.sm_w2_2item-three-title
+              h1
+                a Apple iPhone 5 16Gb 
+                br
+                  | от
+                  a 22 400 р
+              .sm_w2_2all-prop
+                a
+                  span.sm_w2_2txt Все предложения
+                  span.sm_w2_2count 25
+            .sm_w2_2col-12
+              == Slim::Template.new("tbl-sm2.slim").render
+          .sm_w2_2row.sm_w2_2row-body
+            .sm_w2_2col-4
+              a href="#"
+                img.sm_w2_2img-responsive.sm_w2_2item-photo.sm_w2_2item-three-photo alt="" src="img/htc.png"
+            .sm_w2_2col-8.sm_w2_2item-three-title
+              h1
+                a Apple iPhone 5 16Gb 
+                br
+                  | от
+                  a 22 400 р
+              .sm_w2_2all-prop
+                a
+                  span.sm_w2_2txt Все предложения
+                  span.sm_w2_2count 25
+            .sm_w2_2col-12
+              == Slim::Template.new("tbl-sm2.slim").render
+          .sm_w2_2row.sm_w2_2row-footer
+            .sm_w2_2col-12.sm_w2_2power
+              p.sm_w2_2text-center
+                | Powered by
+                a SocialMart
